@@ -1,0 +1,12 @@
+/home/chris/www/tiny/ext/kernel/array.c: In function 'zephir_array_update_multi':
+/home/chris/www/tiny/ext/kernel/array.c:1274:2: warning: second parameter of 'va_start' not last named argument [-Wvarargs]
+  va_start(ap, types_length);
+  ^
+/home/chris/www/tiny/ext/kernel/object.c: In function 'zephir_update_property_array_multi':
+/home/chris/www/tiny/ext/kernel/object.c:1014:2: warning: second parameter of 'va_start' not last named argument [-Wvarargs]
+  va_start(ap, types_length);
+  ^
+/home/chris/www/tiny/ext/kernel/object.c: In function 'zephir_update_static_property_array_multi_ce':
+/home/chris/www/tiny/ext/kernel/object.c:1656:2: warning: second parameter of 'va_start' not last named argument [-Wvarargs]
+  va_start(ap, types_length);
+  ^
