@@ -1,5 +1,12 @@
 {
+ "repositories": [
+   ],
     "require": {
-        "phalcon/zephir": "1.0.*@dev"
+    },
+    "minimum-stability": "dev",
+     "autoload": {
+        "psr-4": {
+            "Spiffy\\Route\\": "spiffy-route/src/"
+        }
     }
 }
