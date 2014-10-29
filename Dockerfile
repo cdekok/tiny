@@ -1,6 +1,7 @@
 FROM php:5.6-apache
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
-COPY . /var/www/html
+COPY ./ /var/www/html
+COPY ./php.ini-development /usr/local/lib/php.ini
 RUN apt-get update && apt-get install -y re2c libpcre3-dev git \
 	&& rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/json-c/json-c.git /tmp/json-c/
@@ -18,3 +19,6 @@ RUN ~/.composer/vendor/phalcon/zephir/install
 WORKDIR /var/www/html/
 RUN cd /var/www/html/ && ~/.composer/vendor/bin/zephir install
 RUN cd /var/www/html/ && ~/.composer/vendor/bin/zephir install
+RUN echo 'extension=tiny.so' >> /usr/local/lib/php.ini
+RUN a2enmod rewrite
+RUN cp -f apache2.conf /etc/apache2/apache2.conf
