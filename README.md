@@ -1,11 +1,11 @@
 Apache 2 & PHP 5.6
 
-1000 Requests (50 concurrent)
+1.000 Requests (50 concurrent)
 
 - PHP **0.868** Seconds
 - Zephir **0.371** Seconds
 
-100000 Requests (50 Concurrent)
+100.000 Requests (50 Concurrent)
 
 - PHP **102.113** Seconds
 - Zephir **41.956** Seconds
