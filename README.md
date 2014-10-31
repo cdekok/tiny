@@ -2,13 +2,13 @@ Apache 2 & PHP 5.6
 
 1000 Requests (50 concurrent)
 
-- PHP 0.868 Seconds
-- Zephir 0.371 Seconds
+- PHP **0.868** Seconds
+- Zephir **0.371** Seconds
 
 100000 Requests (50 Concurrent)
 
-- PHP 102.113 Seconds
-- Zephir 41.956 Seconds
+- PHP **102.113** Seconds
+- Zephir **41.956** Seconds
 
 1000 Requests
 
@@ -61,3 +61,4 @@ HTML transferred:       72700000 bytes
 Requests per second:    2383.47 [#/sec] (mean)
 Time per request:       20.978 [ms] (mean)
 Time per request:       0.420 [ms] (mean, across all concurrent requests)
+
